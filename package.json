@@ -1,0 +1,19 @@
+{
+  "name": "todo-app-main",
+  "version": "1.0.0",
+  "description": "Simple To-do app",
+  "main": "index.js",
+  "scripts": {
+    "compile-css": "sass --watch style/style.scss:style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raj8649/todo-app-main.git"
+  },
+  "author": "Rajesh Ramamurthi / Design (Front-end Mentor)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raj8649/todo-app-main/issues"
+  },
+  "homepage": "https://github.com/Raj8649/todo-app-main#readme"
+}

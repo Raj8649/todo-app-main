@@ -1,24 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Todo app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
+  <div class="container lightTheme">
+    <div class="modal">
+      <div class="modal__header">
+        <div class="modal__header-title">
+          Todo
+        </div>
+        <div class="theme">
+          <input class="theme__checkbox" type="checkbox" name="" id="">
+          <!-- <img src="/images/icon-moon.svg"> -->
+        </div>
+      </div>
+      <div class="modal__input">
+        <div>
+          <input class="newTodo" type="text" placeholder="Create a new todo...">
+        </div>
+      </div>
+      <div class="modal__list">
+        <div class="modal__list-todo">
+          <ul class="modal__list-ul">
 
-  Todo
+          </ul>
+          <div class="modal__list-empty">
+            <img src="images/empty.svg" alt="" srcset="">
+            <h3>Welcome to Simple To-do App</h3>
+            <h4>Start creating To-do list and keep checking out the tasks and keep your schedule tasks on time</h4>
+          </div>
+        </div>
+        <div class="modal__list-filter">
+          <div class="modal__list-count">
+            <span class="todoLength">0 item</span> left
+          </div>
+          <div class="modal__list-filter-tabs">
+            <span class="filter__tabs-span todoAll active__tab">All</span>
+            <span class="filter__tabs-span todoActive">Active</span>
+            <span class="filter__tabs-span todoCompleted">Completed</span>
+          </div>
+          <div class="modal__list-clear">
+            <span class="todoClearCompleted">Clear Completed</span>
+          </div>
+        </div>
+      </div>
+      <div class="mobile__filters">
+        <div class="modal__list-filter-tabs">
+          <span class="filter__tabs-span todoAll active__tab">All</span>
+          <span class="filter__tabs-span todoActive">Active</span>
+          <span class="filter__tabs-span todoCompleted">Completed</span>
+        </div>
+      </div>
 
-  <!-- Add dynamic number --> items left
+      <div class="drag__copy">Drag and drop to reorder list</div>
+    </div>
+  </div>
+
+  <div class="toast">
+    <div class="toast__bubble">
+      <div class="toast__message">asdasd</div>
+    </div>
+  </div>
+  <!-- Todo
+
+items left
 
   All
   Active 
@@ -30,7 +90,13 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Rajesh Ramamurthi</a>.
+  </div> -->
 </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="script/script.js"></script>
+
 </html>
